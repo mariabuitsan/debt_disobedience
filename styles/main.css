@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+body {
+    width: fit-content;
+    height: 100vh;
+    margin: 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(50, 75px); /* number and size of columns */
+    gap: 0.5px; /* gap between squares */
+}
+/*#text-box{ --not sure if I should use this or not
+    display: none;
+}*/
+.square {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 0.01px;
+    /*border: 1px solid #000; sometimes I use this for orientation on my canvas*/
+    color: transparent;
+}
+.square.debt-cursor {
+    cursor: url('assets/img/bankruptcy-meme.png') auto;
+}
+h1{
+    position: absolute;
+    color: #000;
+    font-family: 'VT323', monospace;;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap: break-word;
+    width: 247px;
+    margin-left: 410px;
+}
+#individual{
+    margin-left: 710px;
+    margin-top: 550px;
+}
+h2{
+    position: absolute;
+    color: #9747FF;
+    font-family: 'VT323', monospace;;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap: break-word;
+    width: 680px;
+    margin-left: 1890px;
+}
+#collective{
+    margin-top: 1050px;
+    margin-left: 5px;
+    width: 500px;
+}
+#menu{
+    position: absolute;
+    width: 192px;
+    height: 291px;
+    background-color: #000;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: #FAEDED;
+    font-size: 20px;
+    font-family: 'Lancelot' serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
